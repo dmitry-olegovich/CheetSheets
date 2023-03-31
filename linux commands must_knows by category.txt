@@ -1,0 +1,75 @@
+* DIRECTORY MANIPULATION
+	cd
+	mkdir
+	rmdir
+	ls (--sort -h)
+	du
+	tree
+
+* FILE MANIPULATION
+  - MODIFY
+	cp
+	mv
+	ln (-s)
+	touch
+	rm
+	chmod/chgrp/chown
+	getfacl/setfacl (-m|-x) (u|g|o):{uid|guid|}:{rwx-}
+  - VIEW
+	cat
+	less/more
+	wc
+	head/tail
+	vim/emacs/nano
+
+* UTILITY
+	date
+	grep
+	sort
+	diff
+	xargs
+	ssh
+	find
+	tmux
+	which/whatis/whereis
+	watch
+	stream redirection: >, 1>, 2>, &>, 2>&1, <, >>, |
+	running multiple commands in one line '&&', '||', ';'
+	jobs/fg/bg/'&' symbol to run in bg
+	"`" quotes to execute command
+	tar # czf - create, tzf - list, zxf - unpack
+
+	info coreutils
+	man
+
+* WEB/NETWORK
+	wget
+	curl
+	w3m
+
+* SYSTEM ADMINISTRATION
+	uname -a
+	lshw/lsblk
+	ps (aux, --sort) / top / htop
+	free / vmstat
+	df, du
+	kill -15 PID, kill -9 PID, kill -11 PID, killall
+	nice/renice
+	env/printenv
+	cron
+  - USERS AND GROUPS
+	/etc/passwd, /etc/group, /etc/sudoers
+	groups, groupadd, groupdel, groupmod, gpasswd [-A for admin]
+	useradd, deluser, passwd, usermod
+	w (who is logged on), lastb (last bad login attempts)
+  - NETWORKING
+	ip addr / ifconfig
+	ping / ping6 / traceroute / traceroute6 / mtr
+	dig / host
+	netstat
+	telnet / nc
+	tcpdump
+	dhclient
+* DEV
+	time / perf - to perf tune scripts
+	strace
